@@ -8,7 +8,7 @@ namespace UseallBackend.Context
     {
         static NpgsqlConnection connection;
         public static void ConnectDb() {
-            var connectionString = "Host=localhost;Port=5432;Database=Useall;Username=postgres;Password=D-6mYWL7";
+            var connectionString = "Host=localhost;Port=5432;Database=Useall;Username=USER_DB;Password=SENHA";
             connection = new NpgsqlConnection(connectionString);
             connection.Open();
         }
